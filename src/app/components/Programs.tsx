@@ -41,7 +41,7 @@ export default function Programs() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-600 to-teal-600 mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Discover how we're making a difference in the lives of seniors through our various initiatives
+            Discover how we&apos;re making a difference in the lives of seniors through our various initiatives
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

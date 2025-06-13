@@ -24,7 +24,7 @@ export function generateMetadata({ metadata }: { metadata?: PageMetadata }): Met
   };
 }
 
-export default function PageLayout({ children, metadata }: PageLayoutProps) {
+export default function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-amber-50/30">
       <Navbar />

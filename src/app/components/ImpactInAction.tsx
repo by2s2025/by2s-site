@@ -25,7 +25,7 @@ export default function ImpactInAction() {
             >
               <div className="absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg z-10 max-w-[200px]">
                 <p className="text-sm text-gray-700 italic">
-                  "The joy in their eyes when we sing together is priceless"
+                  &quot;The joy in their eyes when we sing together is priceless&quot;
                 </p>
               </div>
             </blockquote>
