@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { siteConfig } from '@/config/site';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -99,7 +98,7 @@ export default function ContactForm() {
       setStatus('success');
       setFormData({ name: '', email: '', confirmEmail: '', subject: '', message: '' });
       setRecaptchaValue(null);
-    } catch (error) {
+    } catch {
       setStatus('error');
       setErrorMessage('Failed to send message. Please try again.');
     }
@@ -123,12 +122,12 @@ export default function ContactForm() {
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
       <h2 className="text-3xl font-playfair font-medium text-gray-900 mb-2">Get in Touch</h2>
-      <p className="text-gray-600 mb-8">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      <p className="text-gray-600 mb-8">We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.</p>
       
       {status === 'success' ? (
         <div className="bg-green-50 text-green-700 p-6 rounded-lg mb-6 border border-green-100">
           <h3 className="text-xl font-playfair font-medium mb-2">Thank You!</h3>
-          <p>Your message has been sent successfully. We'll get back to you soon.</p>
+          <p>Your message has been sent successfully. We&apos;ll get back to you soon.</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-6">

@@ -37,8 +37,8 @@ function findNavItemByPath(items: NavItem[], path: string): NavItem | undefined 
     if (item.href === path) {
       return item;
     }
-    if (item.children) {
-      const found = findNavItemByPath(item.children, path);
+    if ('children' in item) {
+      const found = findNavItemByPath(item.children as NavItem[], path);
       if (found) return found;
     }
   }

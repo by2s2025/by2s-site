@@ -13,8 +13,8 @@ export default function GetInvolved() {
           <div className="w-24 h-1 bg-gradient-to-r from-rose-600 to-pink-600 mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Join our mission to create meaningful connections between generations. 
-            Whether you're a student, a creative leader, or a community partner, 
-            there's a place for you in our BY2S family.
+            Whether you&apos;re a student, a creative leader, or a community partner, 
+            there&apos;s a place for you in our BY2S family.
           </p>
         </div>
 

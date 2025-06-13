@@ -18,7 +18,7 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               Founded on the principles of accessibility and inclusivity, we believe in making technology 
               work for everyone. Our team combines expertise with passion to deliver solutions that make 
-              a difference in people's lives.
+              a difference in people&apos;s lives.
             </p>
           </div>
           
