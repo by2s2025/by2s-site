@@ -26,15 +26,7 @@ async function verifyRecaptcha(token: string) {
 
 export async function POST(request: Request) {
   try {
-    const { name, email, subject, message, recaptchaToken, website } = await request.json();
-
-    // Honeypot check: if website field is filled, treat as spam
-    if (website && website.trim() !== '') {
-      return NextResponse.json(
-        { message: 'Email sent successfully' },
-        { status: 200 }
-      );
-    }
+    const { name, email, subject, message, recaptchaToken } = await request.json();
 
     // Verify reCAPTCHA
     const isValidRecaptcha = await verifyRecaptcha(recaptchaToken);

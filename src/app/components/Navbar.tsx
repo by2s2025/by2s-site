@@ -12,23 +12,10 @@ import { NavItem, NavItemWithChildren } from '@/types/navigation';
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
   const hasChildren = (item: NavItem): item is NavItemWithChildren => {
     return 'children' in item;
-  };
-
-  const handleMouseEnter = (href: string) => {
-    if (dropdownTimeout) clearTimeout(dropdownTimeout);
-    setActiveDropdown(href);
-  };
-
-  const handleMouseLeave = () => {
-    const timeout = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 200);
-    setDropdownTimeout(timeout);
   };
 
   return (
@@ -55,55 +42,41 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {siteConfig.navigation.main.map((item) => (
-              hasChildren(item) ? (
-                <div
-                  key={item.href}
-                  className="relative group"
-                  onMouseEnter={() => handleMouseEnter(item.href)}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <Link
-                    href={item.href}
-                    className={cn(
-                      "text-gray-700 hover:text-gray-900 flex items-center",
-                      isActiveRoute(pathname, item.href) && "text-amber-600 font-medium"
-                    )}
-                  >
-                    {item.title}
-                    <ChevronDown className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" />
-                  </Link>
-                  {/* Dropdown Menu */}
-                  {activeDropdown === item.href && (
-                    <div className="absolute left-0 mt-2 w-64 rounded-lg bg-white shadow-lg border border-gray-100 py-2">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className={cn(
-                            "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50",
-                            isActiveRoute(pathname, child.href) && "bg-amber-50 text-amber-600"
-                          )}
-                        >
-                          <div className="font-medium">{child.title}</div>
-                          <div className="text-gray-500 text-xs">{child.description}</div>
-                        </Link>
-                      ))}
-                    </div>
+              <div key={item.href} className="relative group">
+                <Link
+                  href={item.href}
+                  className={cn(
+                    "text-gray-700 hover:text-gray-900 flex items-center",
+                    isActiveRoute(pathname, item.href) && "text-amber-600 font-medium"
                   )}
-                </div>
-              ) : (
-                <div key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={cn(
-                      "text-gray-700 hover:text-gray-900 flex items-center",
-                      isActiveRoute(pathname, item.href) && "text-amber-600 font-medium"
-                    )}
-                  >
-                    {item.title}
-                  </Link>
-                </div>
-              )
+                  onMouseEnter={() => hasChildren(item) && setActiveDropdown(item.href)}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
+                  {item.title}
+                  {hasChildren(item) && (
+                    <ChevronDown className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" />
+                  )}
+                </Link>
+                
+                {/* Dropdown Menu */}
+                {hasChildren(item) && activeDropdown === item.href && (
+                  <div className="absolute left-0 mt-2 w-64 rounded-lg bg-white shadow-lg border border-gray-100 py-2">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className={cn(
+                          "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50",
+                          isActiveRoute(pathname, child.href) && "bg-amber-50 text-amber-600"
+                        )}
+                      >
+                        <div className="font-medium">{child.title}</div>
+                        <div className="text-gray-500 text-xs">{child.description}</div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <Link 
               href="/contact" 
