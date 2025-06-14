@@ -78,7 +78,7 @@ export default function ContactForm() {
     } else {
       setFormData(prev => ({ ...prev, subject: typeInstructions[selectedType].subject }));
     }
-  }, [selectedType]);
+  }, [selectedType, typeInstructions]);
 
   const validateEmail = (email: string) => {
     // RFC 5322 compliant email regex
