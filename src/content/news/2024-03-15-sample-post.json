@@ -1,0 +1,6 @@
+{
+  "title": "Sample News Post",
+  "date": "2024-03-15",
+  "excerpt": "This is a sample news post to demonstrate our new content system.",
+  "content": "This is a sample news post to demonstrate our new content system. We're using a modern approach with JSON files for better type safety and performance.\n\n## Features\n\n- **Type Safety**: Full TypeScript support\n- **Performance**: Server-side rendering\n- **Modern**: Built with Next.js 14\n- **Simple**: No external dependencies\n\n## Why This Approach?\n\nThis approach is:\n- More maintainable\n- Type-safe\n- Faster\n- Simpler to understand\n- No deprecated dependencies"
+} 
