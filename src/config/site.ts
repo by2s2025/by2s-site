@@ -23,12 +23,12 @@ export const siteConfig = {
     main: [
       {
         title: 'About',
-        href: '/about',
+        href: '/#about',
         description: 'Learn about our mission and impact',
       },
       {
         title: 'Programs',
-        href: '/programs',
+        href: '/#programs',
         description: 'Explore our initiatives and activities',
         children: [
           {
@@ -44,47 +44,46 @@ export const siteConfig = {
           {
             title: 'Senior Smiles Survey',
             href: '/programs/senior-smiles',
-            description: 'Youth-led research and awareness',
+            description: 'SeniorScope – A youth-driven initiative where students create educational media to deepen understanding of aging and promote meaningful support for older adults.',
+          },
+          {
+            title: 'Donation Drives',
+            href: '/programs/donation-drives',
+            description: 'Organized drives to support nonprofit organizations serving seniors, providing essential items and care to those in need.',
           },
           {
             title: 'International Outreach',
-            href: '/programs/international',
-            description: 'Global connections and cultural exchange',
+            href: '/programs/international-outreach',
+            description: 'Expanding our impact globally through partnerships and initiatives that support seniors worldwide.',
           },
         ],
       },
       {
         title: 'Get Involved',
-        href: '/get-involved',
+        href: '/#get-involved',
         description: 'Join our mission',
         children: [
           {
             title: 'Student Sign-Up',
-            href: '/get-involved/student',
+            href: '/contact?type=student',
             description: 'Join as a student volunteer',
           },
           {
             title: 'Music/Craft Leader',
-            href: '/get-involved/leader',
+            href: '/contact?type=leader',
             description: 'Lead creative workshops',
           },
           {
             title: 'Nursing Home Partner',
-            href: '/get-involved/partner',
+            href: '/contact?type=partner',
             description: 'Partner with us',
           },
           {
             title: 'Global Partner',
-            href: '/get-involved/global',
+            href: '/contact?type=global',
             description: 'International collaboration',
           },
         ],
-      },
-      {
-        title: 'Contact',
-        href: '/contact',
-        description: 'Get in touch with us',
-        isHighlighted: true,
       },
     ],
     footer: [

@@ -27,7 +27,7 @@ export default function Hero() {
           the joy of creative crafts, and the warmth of genuine compassion
         </p>
         <Link
-          href="/get-involved"
+          href="/#get-involved"
           className="inline-block bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-200 shadow-lg hover:shadow-xl"
         >
           Get Involved

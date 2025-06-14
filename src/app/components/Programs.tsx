@@ -1,4 +1,4 @@
-import { Music, Palette, Smile, Globe } from 'lucide-react';
+import { Music, Palette, Smile, Globe, Gift, Video } from 'lucide-react';
 
 const programs = [
   {
@@ -16,16 +16,23 @@ const programs = [
     iconColor: 'text-teal-600',
   },
   {
-    title: 'Senior Smiles Survey',
-    description: 'A youth-led initiative focused on education and awareness, helping young people understand and better support the needs of our aging population.',
-    icon: Smile,
-    color: 'bg-pink-50',
-    iconColor: 'text-pink-600',
+    title: 'SeniorScope',
+    description: 'A youth-driven initiative where students create educational media to deepen understanding of aging and promote meaningful support for older adults.',
+    icon: Video,
+    color: 'bg-blue-50',
+    iconColor: 'text-blue-600',
   },
   {
     title: 'International Outreach',
-    description: 'Connecting hearts across borders through global card and mail exchanges, fostering cultural understanding and bringing joy to seniors worldwide.',
+    description: 'Expanding our impact globally through partnerships and initiatives that support seniors worldwide.',
     icon: Globe,
+    color: 'bg-red-50',
+    iconColor: 'text-red-600',
+  },
+  {
+    title: 'Donation Drives',
+    description: 'Organized drives to support nonprofit organizations serving seniors, providing essential items and care to those in need.',
+    icon: Gift,
     color: 'bg-teal-50',
     iconColor: 'text-teal-600',
   },
@@ -33,7 +40,7 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-pink-50/30">
+    <section id="programs" className="py-20 bg-gradient-to-b from-white to-pink-50/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-pink-600 to-teal-600 bg-clip-text text-transparent">
