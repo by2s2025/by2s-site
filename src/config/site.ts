@@ -6,8 +6,9 @@ export const siteConfig = {
   links: {
     twitter: 'https://twitter.com/by2s',
     github: 'https://github.com/by2s',
-    instagram: 'https://instagram.com/by2s',
-    youtube: 'https://youtube.com/@by2s',
+    instagram: 'https://www.instagram.com/by2s.global/',
+    youtube: 'https://www.youtube.com/@BY2S.Global',
+    tiktok: 'https://www.tiktok.com/@by2s.global',
   },
   contact: {
     email: 'by2s.global+webinquiry@gmail.com',
@@ -15,9 +16,9 @@ export const siteConfig = {
     address: '123 Main Street, City, State 12345',
   },
   social: {
-    instagram: 'by2s',
-    tiktok: '@by2s',
-    youtube: '@by2s',
+    instagram: 'by2s.global',
+    tiktok: '@by2s.global',
+    youtube: '@BY2S.Global',
   },
   navigation: {
     main: [
