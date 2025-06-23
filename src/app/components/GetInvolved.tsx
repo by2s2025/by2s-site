@@ -60,7 +60,7 @@ export default function GetInvolved() {
           
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://instagram.com/by2s" 
+              href="https://www.instagram.com/by2s.global/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-rose-600 transition-colors"
@@ -68,7 +68,7 @@ export default function GetInvolved() {
               <Instagram className="w-6 h-6" />
             </a>
             <a 
-              href="https://tiktok.com/@by2s" 
+              href="https://www.tiktok.com/@by2s.global" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-rose-600 transition-colors"
@@ -78,7 +78,7 @@ export default function GetInvolved() {
               </svg>
             </a>
             <a 
-              href="https://youtube.com/@by2s" 
+              href="https://www.youtube.com/@BY2S.Global" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-rose-600 transition-colors"

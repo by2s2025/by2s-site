@@ -20,21 +20,23 @@ const About = () => {
   return (
     <section id="about" className="py-16 px-4 md:px-8 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+        <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-pink-600 to-teal-600 bg-clip-text text-transparent text-center">
           About BY2S
         </h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left column - Story */}
           <div className="space-y-4">
             <p className="text-lg text-gray-700 leading-relaxed">
-              BY2S is a pioneering organization dedicated to bridging the gap between technology and society. 
-              Our mission is to create meaningful connections and foster innovation through collaborative 
-              solutions that address real-world challenges.
+              Bridge of Youth to Seniors (BY2S) is a community initiative that connects young people with seniors through music, arts, education, and service.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Founded on the principles of accessibility and inclusivity, we believe in making technology 
-              work for everyone. Our team combines expertise with passion to deliver solutions that make 
-              a difference in people&apos;s lives.
+              We believe intergenerational connection brings joy, understanding, and purpose to both youth and seniors. From nursing home recitals to hands-on art projects, card exchanges, and youth-led educational videos, BY2S fosters empathy, creativity, and kindness across generations.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Currently active in the United States and Thailand, BY2S hopes to grow globally—bridging not only generations but cultures through shared compassion and connection.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Our programs are supported by caring adults and volunteers, with student participation always welcomed and encouraged.
             </p>
           </div>
           

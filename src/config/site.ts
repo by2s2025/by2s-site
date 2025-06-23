@@ -6,8 +6,9 @@ export const siteConfig = {
   links: {
     twitter: 'https://twitter.com/by2s',
     github: 'https://github.com/by2s',
-    instagram: 'https://instagram.com/by2s',
-    youtube: 'https://youtube.com/@by2s',
+    instagram: 'https://www.instagram.com/by2s.global/',
+    youtube: 'https://www.youtube.com/@BY2S.Global',
+    tiktok: 'https://www.tiktok.com/@by2s.global',
   },
   contact: {
     email: 'by2s.global+webinquiry@gmail.com',
@@ -15,9 +16,9 @@ export const siteConfig = {
     address: '123 Main Street, City, State 12345',
   },
   social: {
-    instagram: 'by2s',
-    tiktok: '@by2s',
-    youtube: '@by2s',
+    instagram: 'by2s.global',
+    tiktok: '@by2s.global',
+    youtube: '@BY2S.Global',
   },
   navigation: {
     main: [
@@ -33,27 +34,32 @@ export const siteConfig = {
         children: [
           {
             title: 'Healing Harmonies',
-            href: '/programs/healing-harmonies',
+            href: '/#programs',
+            //href: '/programs/healing-harmonies',
             description: 'Music therapy and performances',
           },
           {
             title: 'Crafts of Kindness',
-            href: '/programs/crafts-of-kindness',
+            href: '/#programs',
+            //href: '/programs/crafts-of-kindness',
             description: 'Creative workshops and art exchanges',
           },
           {
             title: 'Senior Smiles Survey',
-            href: '/programs/senior-smiles',
+            href: '/#programs',
+            //href: '/programs/senior-smiles',
             description: 'SeniorScope – A youth-driven initiative where students create educational media to deepen understanding of aging and promote meaningful support for older adults.',
           },
           {
             title: 'Donation Drives',
-            href: '/programs/donation-drives',
+            href: '/#programs',
+            //href: '/programs/donation-drives',
             description: 'Organized drives to support nonprofit organizations serving seniors, providing essential items and care to those in need.',
           },
           {
             title: 'International Outreach',
-            href: '/programs/international-outreach',
+            href: '/#programs',
+            //href: '/programs/international-outreach',
             description: 'Expanding our impact globally through partnerships and initiatives that support seniors worldwide.',
           },
         ],

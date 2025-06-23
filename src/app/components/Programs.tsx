@@ -1,4 +1,4 @@
-import { Music, Palette, Smile, Globe, Gift, Video } from 'lucide-react';
+import { Music, Palette, Globe, Gift, Video } from 'lucide-react';
 
 const programs = [
   {

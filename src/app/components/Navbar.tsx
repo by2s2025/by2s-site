@@ -57,7 +57,7 @@ export default function Navbar() {
             {siteConfig.navigation.main.map((item) => (
               hasChildren(item) ? (
                 <div
-                  key={item.href}
+                  key={item.title}
                   className="relative group"
                   onMouseEnter={() => handleMouseEnter(item.href)}
                   onMouseLeave={handleMouseLeave}
@@ -77,7 +77,7 @@ export default function Navbar() {
                     <div className="absolute left-0 mt-2 w-64 rounded-lg bg-white shadow-lg border border-gray-100 py-2">
                       {item.children.map((child) => (
                         <Link
-                          key={child.href}
+                          key={child.title}
                           href={child.href}
                           className={cn(
                             "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50",
@@ -92,7 +92,7 @@ export default function Navbar() {
                   )}
                 </div>
               ) : (
-                <div key={item.href}>
+                <div key={item.title}>
                   <Link
                     href={item.href}
                     className={cn(
@@ -141,7 +141,7 @@ export default function Navbar() {
               </span>
             </div>
             {siteConfig.navigation.main.map((item) => (
-              <div key={item.href} className="px-2 py-3">
+              <div key={item.title} className="px-2 py-3">
                 <Link
                   href={item.href}
                   className={cn(
@@ -160,7 +160,7 @@ export default function Navbar() {
                   <div className="mt-2 pl-4 space-y-2">
                     {item.children.map((child) => (
                       <Link
-                        key={child.href}
+                        key={child.title}
                         href={child.href}
                         className={cn(
                           "block text-sm text-gray-600 hover:text-gray-900",

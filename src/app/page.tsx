@@ -2,7 +2,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Programs from './components/Programs';
-import ImpactInAction from './components/ImpactInAction';
+// import ImpactInAction from './components/ImpactInAction';
 import GetInvolved from './components/GetInvolved';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Programs />
-      <ImpactInAction />
+      {/* <ImpactInAction /> */}
       <GetInvolved />
     </main>
   );
