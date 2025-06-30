@@ -38,6 +38,14 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               Our programs are supported by caring adults and volunteers, with student participation always welcomed and encouraged.
             </p>
+            <div className="mt-6">
+              <a
+                href="/team"
+                className="inline-block px-6 py-2 bg-teal-600 text-white rounded hover:bg-teal-700 transition font-semibold"
+              >
+                Meet Our Team
+              </a>
+            </div>
           </div>
           
           {/* Right column - Video/Infographic placeholder */}
