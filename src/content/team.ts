@@ -7,6 +7,11 @@ export const team = [
   {
     name: "Acelynn Saisuphaluck",
     role: "Project Coordinator - BY2S USA",
-    image: "/images/team/placeholder.png",
+    image: "/images/team/acelynn-sai.png",
+  },
+  {
+    name: "Noah Lim",
+    role: "Project Coordinator - BY2S USA",
+    image: "/images/team/noah-lim.png",
   },
 ]; 
