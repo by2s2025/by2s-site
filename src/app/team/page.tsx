@@ -1,6 +1,7 @@
 import React from "react";
 import { team } from "@/content/team";
 import Image from "next/image";
+import { Mail } from "lucide-react";
 
 const TeamPage = () => {
   return (
@@ -24,6 +25,14 @@ const TeamPage = () => {
               />
               <div className="font-bold text-xl mb-1 text-gray-900">{member.name}</div>
               <div className="text-teal-700 font-medium mb-2">{member.role}</div>
+              {member.hasContact && member.contactLink && (
+                <a href={member.contactLink}>
+                  <button className="mt-2 px-3 py-1.5 bg-teal-600 text-white rounded hover:bg-teal-700 transition flex items-center gap-2 text-sm">
+                    <Mail className="w-4 h-4" />
+                    Contact
+                  </button>
+                </a>
+              )}
             </div>
           ))}
         </div>
