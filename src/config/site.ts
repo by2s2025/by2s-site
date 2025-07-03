@@ -11,8 +11,6 @@ export const siteConfig = {
   },
   contact: {
     email: 'by2s.global+webinquiry@gmail.com',
-    phone: '+1 (555) 123-4567',
-    address: '123 Main Street, City, State 12345',
   },
   social: {
     instagram: 'by2s.global',
