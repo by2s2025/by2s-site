@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { socialLinks } from "@/content/socialLinks";
 import { Instagram, Youtube } from "lucide-react";
+import AppInstallHandler from "./components/AppInstallHandler";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: '/icons/favicon.ico', sizes: 'any' },
+      { url: '/icons/favicon-v2.ico', sizes: 'any' },
       { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
       { url: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
     ],
@@ -87,6 +88,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} font-sans antialiased ${playfair.className}`}>
       <body className="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200 min-h-screen flex flex-col">
+        <AppInstallHandler />
         <Navbar />
         <main className="flex-1">{children}</main>
         <footer className="bg-gray-100 border-t border-gray-200 py-8 text-center text-gray-600 text-sm">
@@ -116,6 +118,11 @@ export default function RootLayout({
             </div>
           </div>
           <div className="text-gray-400 mt-4">© {new Date().getFullYear()} BY2S. All rights reserved.</div>
+          <div className="mt-2 space-x-4">
+            <a href="/privacy" className="text-gray-500 hover:text-rose-600 underline transition-colors">Privacy Policy</a>
+            <span className="text-gray-300">|</span>
+            <a href="/terms" className="text-gray-500 hover:text-rose-600 underline transition-colors">Terms of Service</a>
+          </div>
         </footer>
       </body>
     </html>
