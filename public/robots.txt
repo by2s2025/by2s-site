@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin or private areas (if you add them later)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important files
+Allow: /sitemap.xml
+Allow: /manifest.json
+
+# Crawl delay - more conservative for Vercel hobby tier
+Crawl-delay: 3
+
+# Sitemap location
+Sitemap: https://by2s.global/sitemap.xml

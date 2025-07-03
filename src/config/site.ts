@@ -1,19 +1,16 @@
 export const siteConfig = {
   name: 'BY2S',
   description: 'Bridging young hearts with elderly souls through meaningful connections',
-  url: 'https://by2s.org',
-  ogImage: 'https://by2s.org/og.jpg',
+  url: 'https://by2s.global',
+  ogImage: 'https://by2s.global/images/by2s-logo.png',
   links: {
     twitter: 'https://twitter.com/by2s',
-    github: 'https://github.com/by2s',
     instagram: 'https://www.instagram.com/by2s.global/',
     youtube: 'https://www.youtube.com/@BY2S.Global',
     tiktok: 'https://www.tiktok.com/@by2s.global',
   },
   contact: {
     email: 'by2s.global+webinquiry@gmail.com',
-    phone: '+1 (555) 123-4567',
-    address: '123 Main Street, City, State 12345',
   },
   social: {
     instagram: 'by2s.global',

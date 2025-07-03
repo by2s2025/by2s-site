@@ -17,7 +17,66 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "BY2S - Bridge of Youth to Seniors",
-  description: "Bridging young hearts with elderly souls through meaningful connections",
+  description: "Bridging young hearts with elderly souls through meaningful connections. Join our intergenerational programs in music, arts, and community service across the US and Thailand.",
+  keywords: ["intergenerational", "youth", "seniors", "community service", "music therapy", "arts", "volunteer", "BY2S", "Bridge of Youth to Seniors"],
+  authors: [{ name: "BY2S Global" }],
+  creator: "BY2S Global",
+  publisher: "BY2S Global",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://by2s.global'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://by2s.global',
+    title: 'BY2S - Bridge of Youth to Seniors',
+    description: 'Bridging young hearts with elderly souls through meaningful connections. Join our intergenerational programs in music, arts, and community service.',
+    siteName: 'BY2S Global',
+    images: [
+      {
+        url: '/images/by2s-logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'BY2S - Bridge of Youth to Seniors',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BY2S - Bridge of Youth to Seniors',
+    description: 'Bridging young hearts with elderly souls through meaningful connections',
+    images: ['/images/by2s-logo.png'],
+    creator: '@by2s',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+  icons: {
+    icon: [
+      { url: '/icons/favicon.ico', sizes: 'any' },
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/icons/manifest.json',
 };
 
 export default function RootLayout({
