@@ -7,7 +7,7 @@ export const teamProgramAdvisors = [
     contactLink: "/contact?type=other"
   },
   {
-    name: "Dr. Worawan Rattanasamphan",
+    name: "Dr. Worawan Rattanasamphan, MD",
     role: "Geriatric Advisor",
     image: "/images/team/advisors/dr-worawan-rattanasamphan.png",
     hasContact: false,
@@ -15,7 +15,9 @@ export const teamProgramAdvisors = [
   {
     name: "Maria DeBacco",
     role: "Music Program Advisor",
-    image: "/images/team/avatar-1.png",
+    image: "/images/team/advisors/maria-debacco.png",
+    externalLink: "https://mariadebaccopianostudio.weebly.com/contact.html",
+    buttonText: "Studio"
   },
   {
     name: "Roger Garvin",
@@ -25,7 +27,7 @@ export const teamProgramAdvisors = [
   },
   {
     name: "Sara Wong",
-    role: "Donation Program Advisor",
+    role: "Donation Drives Advisor",
     image: "/images/team/advisors/sara-wong.png",
     hasContact: false
   },
@@ -34,6 +36,7 @@ export const teamProgramAdvisors = [
     role: "Arts Program Advisor",
     image: "/images/team/advisors/belen-hochman.png",
     hasContact: true,
-    externalLink: "https://bnartplacesoca.com/"
+    externalLink: "https://bnartplacesoca.com/",
+    buttonText: "Studio"
   }, 
 ];
