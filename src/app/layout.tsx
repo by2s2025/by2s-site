@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { socialLinks } from "@/content/socialLinks";
 import { Instagram, Youtube } from "lucide-react";
 import AppInstallHandler from "./components/AppInstallHandler";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -125,6 +126,7 @@ export default function RootLayout({
             <a href="/terms" className="text-gray-500 hover:text-rose-600 underline transition-colors">Terms of Service</a>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );

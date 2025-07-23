@@ -1,10 +1,11 @@
 export const teamProgramAdvisors = [
   {
-    name: "Tarit Lim",
-    role: "Program Advisor",
-    image: "/images/team/advisors/tarit-lim.png",
-    hasContact: true,
-    contactLink: "/contact?type=other"
+    name: "Somruedee Tansalarak",
+    role: "International Outreach Advisor",
+    image: "/images/team/advisors/somruedee-tansalarak.png",
+    hasContact: false,
+    externalLink: "https://www.petclub.co.th/en/content/11603/pet-fair-2024-en",
+    buttonText: "Link"
   },
   {
     name: "Dr. Worawan Rattanasamphan, MD",
@@ -22,7 +23,7 @@ export const teamProgramAdvisors = [
   {
     name: "Roger Garvin",
     role: "Technology Advisor",
-    image: "/images/team/advisors/roger-garvin.png",
+    image: "/images/team/advisors/roger-garvin2.png",
     hasContact: false,
   },
   {
@@ -39,4 +40,11 @@ export const teamProgramAdvisors = [
     externalLink: "https://bnartplacesoca.com/",
     buttonText: "Studio"
   }, 
+  {
+    name: "Tarit Lim",
+    role: "Program Advisor",
+    image: "/images/team/advisors/tarit-lim.png",
+    hasContact: true,
+    contactLink: "/contact?type=other"
+  },
 ];
