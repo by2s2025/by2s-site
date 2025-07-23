@@ -27,8 +27,8 @@ export const mainNav: NavItem[] = [
         description: 'Creative workshops and art exchanges',
       },
       {
-        title: 'Senior Smiles Survey',
-        href: '/programs/senior-smiles',
+        title: 'SeniorScope',
+        href: '/programs/senior-scope',
         description: 'Youth-led research and awareness',
       },
       {

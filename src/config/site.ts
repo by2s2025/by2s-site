@@ -42,7 +42,7 @@ export const siteConfig = {
             description: 'Creative workshops and art exchanges',
           },
           {
-            title: 'Senior Smiles Survey',
+            title: 'SeniorScope',
             href: '/#programs',
             //href: '/programs/senior-smiles',
             description: 'SeniorScope – A youth-driven initiative where students create educational media to deepen understanding of aging and promote meaningful support for older adults.',
@@ -103,7 +103,7 @@ export const siteConfig = {
         items: [
           { title: 'Healing Harmonies', href: '/programs/healing-harmonies' },
           { title: 'Crafts of Kindness', href: '/programs/crafts-of-kindness' },
-          { title: 'Senior Smiles', href: '/programs/senior-smiles' },
+          { title: 'SeniorScope', href: '/programs/senior-scope' },
           { title: 'International', href: '/programs/international' },
         ],
       },
