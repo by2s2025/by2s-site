@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo and Name */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/images/by2s-logo.png"
+              src="/images/by2s-logo.webp"
               alt={siteConfig.name}
               width={120}
               height={40}
