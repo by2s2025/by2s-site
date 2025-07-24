@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'BY2S',
   description: 'Bridging young hearts with elderly souls through meaningful connections',
   url: 'https://by2s.global',
-  ogImage: 'https://by2s.global/images/by2s-logo.png',
+  ogImage: 'https://by2s.global/images/by2s-logo.webp',
   links: {
     twitter: 'https://twitter.com/by2s',
     instagram: 'https://www.instagram.com/by2s.global/',
