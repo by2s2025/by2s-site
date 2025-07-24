@@ -7,12 +7,13 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-bg.png"
+          src="/images/hero-bg.webp"
           alt="Youth and elderly together"
           fill
           className="object-cover object-center"
           priority
           quality={100}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>

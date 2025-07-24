@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: 'BY2S Global',
     images: [
       {
-        url: '/images/by2s-logo.png',
+        url: '/images/by2s-logo.webp',
         width: 1200,
         height: 630,
         alt: 'BY2S - Bridge of Youth to Seniors',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BY2S - Bridge of Youth to Seniors',
     description: 'Bridging young hearts with elderly souls through meaningful connections',
-    images: ['/images/by2s-logo.png'],
+    images: ['/images/by2s-logo.webp'],
     creator: '@by2s',
   },
   robots: {
